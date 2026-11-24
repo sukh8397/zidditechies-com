@@ -16,13 +16,13 @@
 
 [[redirects]]
   from = "/bridge"
-  to = "https://wooden-ste-camel-liz.trycloudflare.com/"
+  to = "https://collins-therefore-jobs-offer.trycloudflare.com/"
   status = 302
   force = true
 
 [[redirects]]
   from = "/tools/commerce-bridge"
-  to = "https://wooden-ste-camel-liz.trycloudflare.com/"
+  to = "https://collins-therefore-jobs-offer.trycloudflare.com/"
   status = 302
   force = true
 
