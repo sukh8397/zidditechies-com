@@ -15,6 +15,18 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
+  from = "/bridge"
+  to = "https://wooden-ste-camel-liz.trycloudflare.com/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/tools/commerce-bridge"
+  to = "https://wooden-ste-camel-liz.trycloudflare.com/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/services"
   to = "/services.html"
   status = 301
