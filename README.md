@@ -31,12 +31,13 @@ No build step, no dependencies, no framework. Plain HTML/CSS/JS.
 ## Current deployment
 
 - Source repository: **https://github.com/sukh8397/zidditechies-com**
-- Netlify project: **https://app.netlify.com/projects/melodious-moxie-8d4c15**
-- Netlify site: **https://melodious-moxie-8d4c15.netlify.app**
+- Netlify project: **https://app.netlify.com/projects/luxury-pastelito-00698e**
+- Netlify site: **https://luxury-pastelito-00698e.netlify.app**
 - Custom domains added in Netlify: `zidditechies.com` (primary) and `www.zidditechies.com` (redirect)
+- HTTPS is enforced with a Let’s Encrypt certificate for both domains
 - Netlify Forms: **brand-enquiry**, with email notification confirmed for **support@zidditechies.com**
 
-The current live deploy was published from the same files in this repository using Netlify Drop. The GitHub repository is the source of truth for future updates.
+The live deploy was published from the same files in this repository using Netlify Drop. The GitHub repository is the source of truth for future updates. The previous project (`melodious-moxie-8d4c15`) is no longer used for this domain.
 
 ## Deploy to Netlify
 
@@ -52,7 +53,7 @@ These records were added after the site was verified on its `netlify.app` addres
 | Type | Host | Value |
 | --- | --- | --- |
 | A | `@` | `75.2.60.5` |
-| CNAME | `www` | `melodious-moxie-8d4c15.netlify.app` |
+| CNAME | `www` | `luxury-pastelito-00698e.netlify.app` |
 
 Do **not** change MX, SPF, DKIM, DMARC or any other records. The `support@zidditechies.com` mailbox is with IONOS and must stay untouched.
 
