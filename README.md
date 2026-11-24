@@ -16,7 +16,7 @@ A standalone static marketing site for the **brand-management division** of Zidd
 | `404.html`, `robots.txt`, `sitemap.xml` | SEO and error handling |
 | `assets/css/styles.css` | Complete visual system (dark, violet/cyan) |
 | `assets/js/main.js` | Mobile menu, year, copy-to-clipboard, scroll reveal |
-| `favicon.svg`, `assets/img/mark.svg` | Brand mark |
+| `favicon.png`, `assets/img/brand-logo.png` | Supplied PNG brand logo |
 | `netlify.toml` | Publish directory, security headers, redirects |
 
 No build step, no dependencies, no framework. Plain HTML/CSS/JS.
