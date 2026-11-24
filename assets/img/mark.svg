@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Ziddi Techies mark">
+  <defs>
+    <linearGradient id="zt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset=".52" stop-color="#d946ef"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="13" fill="url(#zt)" opacity=".14"/>
+  <rect x="1" y="1" width="46" height="46" rx="13" fill="none" stroke="url(#zt)" stroke-width="1.6"/>
+  <path d="M14 15h20L14 33h20" fill="none" stroke="url(#zt)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35.5" cy="34" r="2.4" fill="#22d3ee"/>
+</svg>
