@@ -28,23 +28,35 @@ No build step, no dependencies, no framework. Plain HTML/CSS/JS.
 - Client operations: **+91 98884 58818**
 - Sister division: **https://zidditechies.in**
 
+## Current deployment
+
+- Source repository: **https://github.com/sukh8397/zidditechies-com**
+- Netlify project: **https://app.netlify.com/projects/melodious-moxie-8d4c15**
+- Netlify site: **https://melodious-moxie-8d4c15.netlify.app**
+- Custom domains added in Netlify: `zidditechies.com` (primary) and `www.zidditechies.com` (redirect)
+- Netlify Forms: **brand-enquiry**, with email notification confirmed for **support@zidditechies.com**
+
+The current live deploy was published from the same files in this repository using Netlify Drop. The GitHub repository is the source of truth for future updates.
+
 ## Deploy to Netlify
 
 1. Push this folder to a repository (or drag the folder into Netlify Drop).
 2. In Netlify: **Add new site → Import an existing project**, select the repo.
 3. Build command: leave empty. Publish directory: `.` (already set in `netlify.toml`).
-4. Deploy. Confirm `https://<site-name>.netlify.app` loads and the contact form appears under **Forms → brand-enquiry**.
+4. Deploy. Confirm the `netlify.app` address loads and the contact form appears under **Forms → brand-enquiry**.
 
-## Point zidditechies.com at Netlify (IONOS DNS)
+## IONOS DNS records already applied
 
-Do this only after the Netlify site loads correctly on its netlify.app address.
+These records were added after the site was verified on its `netlify.app` address:
 
-1. In Netlify → **Site configuration → Domain management → Custom domains → Add custom domain**, enter `zidditechies.com`.
-2. Netlify will show the DNS records to add. In the IONOS DNS zone for `zidditechies.com`:
-   - Set the **A record for `@`** to the Netlify load-balancer IP shown in the Netlify UI (commonly `75.2.60.5`).
-   - Add a **CNAME for `www`** pointing to the Netlify site address shown in the UI (for example `<site-name>.netlify.app`).
-3. **Do not change** MX, SPF, DKIM, DMARC or any other records. The `support@zidditechies.com` mailbox is with IONOS and must stay untouched.
-4. Wait for DNS propagation and Netlify TLS issuance, then verify `https://zidditechies.com` and `https://www.zidditechies.com`.
+| Type | Host | Value |
+| --- | --- | --- |
+| A | `@` | `75.2.60.5` |
+| CNAME | `www` | `melodious-moxie-8d4c15.netlify.app` |
+
+Do **not** change MX, SPF, DKIM, DMARC or any other records. The `support@zidditechies.com` mailbox is with IONOS and must stay untouched.
+
+Netlify provisions the Let’s Encrypt certificate automatically after DNS propagation. Verify `https://zidditechies.com` and `https://www.zidditechies.com` once the Netlify HTTPS panel shows a certificate.
 
 ## Notes
 
