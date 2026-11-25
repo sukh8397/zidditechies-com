@@ -1,0 +1,5 @@
+/* Ziddi Techies .COM — Base Design System Fallback Alias
+   Imports core visual system and variables so any legacy, relative, or cached references load perfectly. */
+@import url('/assets/css/styles.css');
+@import url('/assets/css/ziddi-showcase.css');
+@import url('/assets/css/ziddi-3d-visuals.css');
