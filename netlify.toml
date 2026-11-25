@@ -61,3 +61,63 @@
   to = "https://zidditechies.com/:splat"
   status = 301
   force = true
+[[redirects]]
+  from = "/work"
+  to = "/work.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/raja-products"
+  to = "/case-studies/raja-products.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/shauna-lane"
+  to = "/case-studies/shauna-lane.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/terra-cotta-tutoring"
+  to = "/case-studies/terra-cotta-tutoring.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/daughters-of-the-ganges"
+  to = "/case-studies/daughters-of-the-ganges.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/cropsafe-pesticides"
+  to = "/case-studies/cropsafe-pesticides.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/ofrida"
+  to = "/case-studies/ofrida.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/nirvaana-nook"
+  to = "/case-studies/nirvaana-nook.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/the-dry-cape"
+  to = "/case-studies/the-dry-cape.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/house-of-ensembles"
+  to = "/case-studies/house-of-ensembles.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/over-the-top"
+  to = "/case-studies/over-the-top.html"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies/remembrance-design-studio"
+  to = "/case-studies/remembrance-design-studio.html"
+  status = 301
+
