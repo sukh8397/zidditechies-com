@@ -67,6 +67,16 @@
   status = 301
 
 [[redirects]]
+  from = "/insights/one-team-vs-five-vendors"
+  to = "/insights/one-team-vs-five-vendors.html"
+  status = 301
+
+[[redirects]]
+  from = "/insights/brand-growth-operating-rhythm"
+  to = "/insights/brand-growth-operating-rhythm.html"
+  status = 301
+
+[[redirects]]
   from = "/case-studies/raja-products"
   to = "/case-studies/raja-products.html"
   status = 301
