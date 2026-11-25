@@ -1,0 +1,141 @@
+/* Ziddi Techies .COM — Full Agency Portfolio Architecture (Multi-Client) */
+
+/* Filter & Header Row */
+.portfolio-header{
+  padding:clamp(54px,7vw,86px) 0 34px;
+  border-bottom:1px solid var(--line);
+}
+.portfolio-stats-bar{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px;
+}
+.stat-card{
+  padding:16px 20px;border-radius:14px;background:linear-gradient(160deg,#12162a,#0a0d18);
+  border:1px solid var(--line);
+}
+.stat-card strong{
+  display:block;font-family:var(--font-head);font-size:1.6rem;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  line-height:1.1;
+}
+.stat-card span{display:block;font-size:.76rem;color:var(--dim);margin-top:4px}
+
+/* Client Filter Toolbar */
+.portfolio-toolbar{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;
+  padding:24px 0 32px;
+}
+.filter-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.filter-btn{
+  appearance:none;background:rgba(255,255,255,.04);border:1px solid var(--line);
+  color:var(--muted);font-family:var(--font-body);font-size:.84rem;font-weight:600;
+  padding:8px 16px;border-radius:999px;cursor:pointer;transition:all .2s ease;
+}
+.filter-btn:hover{color:#fff;border-color:rgba(167,139,250,.45)}
+.filter-btn.is-active{
+  background:var(--grad);color:#080512;border-color:transparent;font-weight:700;
+  box-shadow:0 8px 20px -8px rgba(217,70,239,.6);
+}
+
+/* Multi-Client Cards Grid */
+.clients-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:24px;
+}
+.client-card{
+  background:linear-gradient(160deg,#13172e,#0a0d1a);
+  border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;
+  display:flex;flex-direction:column;transition:all .3s cubic-bezier(.16,1,.3,1);
+  position:relative;
+}
+.client-card:hover{
+  border-color:rgba(167,139,250,.5);transform:translateY(-5px);box-shadow:var(--shadow);
+}
+.client-card.featured-card{
+  grid-column:1 / -1;
+  background:linear-gradient(150deg,#181d38,#0c1024);
+  border-color:rgba(167,139,250,.38);
+}
+
+/* Card Header Banner */
+.client-card-banner{
+  height:190px;position:relative;overflow:hidden;background:#0d1122;
+  display:flex;align-items:center;justify-content:center;
+}
+.featured-card .client-card-banner{height:250px}
+.client-card-banner img{
+  width:100%;height:100%;object-fit:cover;transition:transform .4s ease;
+}
+.client-card:hover .client-card-banner img{transform:scale(1.04)}
+
+.client-brand-chip{
+  position:absolute;top:14px;left:14px;z-index:2;
+  display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;
+  background:rgba(7,9,17,.86);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);
+  font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;
+}
+.category-badge{
+  position:absolute;top:14px;right:14px;z-index:2;
+  font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:5px 10px;border-radius:8px;background:rgba(22,26,48,.88);backdrop-filter:blur(8px);
+  color:#22d3ee;border:1px solid rgba(34,211,238,.3);
+}
+
+/* Card Body */
+.client-card-body{padding:26px;display:flex;flex-direction:column;flex:1;gap:12px}
+.client-card-title-row{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+}
+.client-card-title-row h3{font-size:1.32rem;margin:0;line-height:1.2}
+.client-card-title-row .client-url{
+  font-size:.78rem;color:#d9c8ff;font-family:monospace;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.client-card-title-row .client-url:hover{color:#fff;text-decoration:underline}
+
+.client-card-desc{font-size:.88rem;color:var(--muted);margin:0;line-height:1.55}
+
+/* Scope Pills */
+.scope-pills-row{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0 10px}
+.scope-pill{
+  font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);color:#cbb6ff;
+}
+
+/* Highlights Box inside Card */
+.client-highlights-box{
+  background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;
+  padding:12px 14px;display:flex;flex-direction:column;gap:6px;
+}
+.highlight-line{display:flex;align-items:center;gap:9px;font-size:.78rem;color:var(--muted)}
+.highlight-line b{color:#fff}
+.highlight-line i{color:#22d3ee;font-style:normal;font-weight:700}
+
+/* Card Footer */
+.client-card-footer{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding-top:16px;border-top:1px solid var(--line);margin-top:auto;
+}
+
+/* Detail Modal */
+.modal-overlay{
+  position:fixed;inset:0;z-index:9999;background:rgba(4,6,14,.92);backdrop-filter:blur(12px);
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.modal-overlay.is-open{display:flex}
+.modal-card{
+  max-width:840px;width:100%;max-height:88vh;overflow-y:auto;
+  background:#101428;border:1px solid var(--line-strong);border-radius:var(--radius-lg);
+  padding:32px;box-shadow:var(--shadow);position:relative;
+}
+.modal-close-btn{
+  position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:10px;
+  background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff;
+  cursor:pointer;display:grid;place-items:center;font-size:1.1rem;
+}
+
+@media(max-width:840px){
+  .portfolio-stats-bar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .clients-grid{grid-template-columns:1fr}
+}
+@media(max-width:540px){
+  .portfolio-stats-bar{grid-template-columns:1fr}
+}
