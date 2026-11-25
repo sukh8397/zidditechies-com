@@ -16,13 +16,13 @@
 
 [[redirects]]
   from = "/bridge"
-  to = "https://collins-therefore-jobs-offer.trycloudflare.com/"
+  to = "https://understood-editorial-only-inherited.trycloudflare.com/"
   status = 302
   force = true
 
 [[redirects]]
   from = "/tools/commerce-bridge"
-  to = "https://collins-therefore-jobs-offer.trycloudflare.com/"
+  to = "https://understood-editorial-only-inherited.trycloudflare.com/"
   status = 302
   force = true
 
